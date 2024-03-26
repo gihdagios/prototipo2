@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lobster&family=Luckiest+Guy&family=Orbitron:wght@400..900&family=Protest+Guerrilla&family=Silkscreen:wght@400;700&display=swap');
+
+:root{
+    --rosa: #f009b6;
+    --branco: #FFFFFF;
+    --rosa2: #fc62f7;
+    --rosa3:#ba4a9e;
+
+}
+
+body{
+    background-color: var(--rosa);
+    color: #FFFFFF;
+}
+
+h1{
+    color: var(--branco);
+    font-family: "Silkscreen", sans-serif;
+    font-size: 50px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+span{
+    color: #1f2249;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 50px;
+}
+
+.botao {
+    font-family: "Silkscreen", sans-serif;
+    background-color: var(--rosa3);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 300px;
+    border-bottom: 4px solid var(--rosa2); 
+    border-left: 2px solid var(--rosa2); 
+    border-right: 2px solid var(--rosa2); 
+    border-top: none;
+    opacity: 50%;
+
+}
+
+
+.botao:first-child{
+    border-radius: 40px 0 0 0;
+}
+
+.botao:last-child{
+    border-radius: 0 40px 0 0;
+}
+
+.botao.ativo{
+    opacity: 100%;
+    border-bottom: 4px solid var(--rosa);
+}
+.abas-conteudo.ativo{
+    display: block;
+}
+
+.abas-conteudo{
+display: none;
+}
+
+.abas-textos{
+    background-color: var(--rosa2);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo-titulo1{
+    font-size: 28px;
+    text-align: center;
+    font-family: "Silkscreen", sans-serif;;
+    letter-spacing: 3px;
+}
+
+.aba-conteudo-titulo2{
+    text-align: center;
+    color: var(--rosa);
+    text-transform: uppercase;
+    font-family: "Silkscreen", sans-serif;
+    letter-spacing: 3px;
+}
+
+.contador{
+    display: flex;
+    justify-content: center;
+    font-family: "Silkscreen", sans-serif;
+    flex-wrap: wrap;
+}
+
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+
+.contador-digito-texto{
+    color: var(--rosa);
+    font-family: "Silkscreen", sans-serif;
+    font-size: 22px;
+    margin: 0;
+}
+
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display: flex;
+    }
+
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+}
